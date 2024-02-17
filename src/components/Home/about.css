@@ -1,0 +1,18 @@
+.about .grid {
+  grid-template-columns: 70% auto;
+  gap: 2rem;
+}
+
+.about .grid > p {
+  font-size: 1.4rem;
+}
+
+.card-txt {
+  font-size: 1.4rem;
+}
+
+#passion {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  /* height: 100%; */
+}

@@ -1,0 +1,66 @@
+main {
+  padding-top: 7rem !important;
+  height: 100vh;
+}
+
+main .grid {
+  grid-template-columns: 70% 30%;
+  grid-template-rows: auto auto;
+  height: 100%;
+}
+
+main .section-title {
+  grid-column: 1;
+  text-align: start;
+  font-size: 5rem;
+  padding: 0;
+  font-weight: 800;
+  align-self: center;
+}
+
+main p {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 2.5rem;
+}
+
+main .icon {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  max-width: 100%;
+  padding: 7rem;
+  color: var(--primary-clr);
+}
+
+main .icon svg {
+  max-width: 100%;
+  height: 100%;
+}
+
+.sample-lessons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.sample-lesson {
+  gap: 0.9rem;
+  text-align: center;
+}
+
+.sample-lesson h3 {
+  color: var(--secondary-clr);
+  font-size: 1.7rem;
+  flex-grow: 1;
+}
+
+.video iframe {
+  aspect-ratio: 16 /9;
+  /* min-width: 400px; */
+  width: calc(80vw / 3);
+
+  border-radius: 1.2rem;
+}

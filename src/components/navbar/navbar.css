@@ -1,0 +1,65 @@
+header {
+  /* margin-inline: 3rem; */
+  width: 100%;
+  position: fixed;
+  padding: 1rem 2rem;
+  z-index: 99;
+}
+
+nav {
+  /* margin-top: 1rem;
+    margin-inline: 2rem; */
+  width: 100%;
+  /* margin-inline: 3rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-clr); /* Adjust background color as needed */
+  border-radius: 2rem;
+  padding: 1rem 4rem;
+  box-shadow: 0 0.0625rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+nav:hover {
+  box-shadow: 0 0.625rem 1rem rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+/* Style the ul for horizontal layout and remove disc */
+ul {
+  list-style: none; /* Removes disc */
+  display: flex; /* Makes the list items inline */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  margin: 0 1rem;
+}
+
+ul li a {
+  color: var(--accent-clr); /* Adjust text color as needed */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem; /* Removes underline */
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--secondary-clr); /* Adjust hover color as needed */
+}
+
+/* Customize logo styles */
+.logo {
+  /* Add specific styles for your logo */
+  font-size: 2.5rem;
+  color: var(--primary-clr);
+  font-weight: bolder;
+  font-family: "JetBrains Mono";
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+}
