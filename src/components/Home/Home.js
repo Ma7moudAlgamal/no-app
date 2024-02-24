@@ -1,9 +1,11 @@
 import SubjectsList from "../Subjects/SubjectsList";
+import TutorsList from "../Tutors/TutorsList";
 import Reason from "./Reason Card/Reason";
-import "./about.css";
-import "./hero.css";
-import "./reasons.css";
-import "./subjectsList.css";
+import "./css/about.css";
+import "./css/hero.css";
+import "./css/reasons.css";
+import "./css/subjectsList.css";
+import "./css/tutorsList.css";
 import { Router, Link } from "react-router-dom";
 
 const Home = () => {
@@ -96,6 +98,12 @@ const Home = () => {
         <h2 className="section-title">Subjects</h2>
 
         <SubjectsList />
+      </section>
+
+      <section id="tutors" className="tutors wrapper">
+        <h2 className="section-title">Tutors</h2>
+
+        <TutorsList />
       </section>
     </>
   );
