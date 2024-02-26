@@ -6,7 +6,7 @@ import "./css/hero.css";
 import "./css/reasons.css";
 import "./css/subjectsList.css";
 import "./css/tutorsList.css";
-import { Router, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 
 const Home = () => {
   return (

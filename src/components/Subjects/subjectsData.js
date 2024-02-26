@@ -7,9 +7,7 @@ import {
   faLanguage,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SubjectDescription from "./SubjectDescription";
 import SampleLesson from "./SampleLesson";
-import Resource from "./Resource";
 
 const SubjectsData = [
   {

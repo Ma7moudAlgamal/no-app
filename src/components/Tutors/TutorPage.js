@@ -9,7 +9,7 @@ const TutorPage = () => {
 
   const updatedName = name.toString().replace("%20", " ");
 
-  const tutorData = tutorsData.find((tutor) => tutor.name == updatedName);
+  const tutorData = tutorsData.find((tutor) => tutor.name === updatedName);
 
   const subjects = tutorData.subjects.map((subject, i) => {
     return (
@@ -39,13 +39,14 @@ const TutorPage = () => {
             <a
               href={`https://api.whatsapp.com/send/?phone=${tutorData.contact.phone}`}
               target="_blank"
+              rel="noreferrer"
             >
               <FontAwesomeIcon icon={faPhone} />
               <p>+{tutorData.contact.phone}</p>
             </a>
           </div>
           <div className="contact-info hover card">
-            <a href={`mailto:${tutorData.contact.email}`} target="_blank">
+            <a href={`mailto:${tutorData.contact.email}`} target="_blank" rel='noreferrer'>
               <FontAwesomeIcon icon={faEnvelope} />
               <p>{tutorData.contact.email}</p>
             </a>

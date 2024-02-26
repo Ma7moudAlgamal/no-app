@@ -1,16 +1,14 @@
 import { useParams } from "react-router-dom";
 import SubjectsData from "./subjectsData";
 import "./SubjectPage.css";
-import SampleLesson from "./SampleLesson";
 
 const SubjectPage = () => {
   const { name } = useParams();
 
   //   const subjectData = SubjectsData.find((map) => map.name === name)
 
-  const subject = SubjectsData.find((subject) => subject.name == name);
+  const subject = SubjectsData.find((subject) => subject.name === name);
 
-  let sampleLessons = [];
 
   if (subject) {
     return (

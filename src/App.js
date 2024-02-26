@@ -1,9 +1,8 @@
 import Home from "./components/Home/Home";
 import SubjectPage from "./components/Subjects/SubjectPage";
-import Path from "./components/Subjects/path";
 import TutorPage from "./components/Tutors/TutorPage";
 import NavBar from "./components/navbar/NavBar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
