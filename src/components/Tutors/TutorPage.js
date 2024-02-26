@@ -30,25 +30,25 @@ const TutorPage = () => {
         </main>
 
         <section className="tutor-contact wrapper">
-          <h2>Contact {tutorData.name}</h2>
-          <div className="contact-info">
-            <div className="hover card">
-              <a
-                href={`https://api.whatsapp.com/send/?phone=${tutorData.contact.phone}`}
-                target="_blank"
-              >
-                <FontAwesomeIcon icon={faPhone} />
-                <p>+{tutorData.contact.phone}</p>
-              </a>
-            </div>
+          <h2>
+            Contact
+            <br />
+            {tutorData.name}
+          </h2>
+          <div className="contact-info hover card">
+            <a
+              href={`https://api.whatsapp.com/send/?phone=${tutorData.contact.phone}`}
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faPhone} />
+              <p>+{tutorData.contact.phone}</p>
+            </a>
           </div>
-          <div className="contact-info">
-            <div className="hover card">
-              <a href={`mailto:${tutorData.contact.email}`} target="_blank">
-                <FontAwesomeIcon icon={faEnvelope} />
-                <p>{tutorData.contact.email}</p>
-              </a>
-            </div>
+          <div className="contact-info hover card">
+            <a href={`mailto:${tutorData.contact.email}`} target="_blank">
+              <FontAwesomeIcon icon={faEnvelope} />
+              <p>{tutorData.contact.email}</p>
+            </a>
           </div>
         </section>
       </div>

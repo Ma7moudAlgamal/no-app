@@ -10,7 +10,7 @@ const SubjectPage = () => {
 
   const subject = SubjectsData.find((subject) => subject.name == name);
 
-  let sampleLessons = []
+  let sampleLessons = [];
 
   if (subject) {
     return (
@@ -25,17 +25,15 @@ const SubjectPage = () => {
 
         <section className="wrapper">
           <h1 className="section-title">Sample Lessons</h1>
-          <div className="sample-lessons">
-            {subject["sample-lessons"]}
-          </div>
+          <div className="sample-lessons">{subject["sample-lessons"]}</div>
         </section>
 
-        <section className="wrapper">
+        {/* <section className="wrapper">
           <h1 className="section-title">Sample Resources</h1>
           <div className="resources">
             {subject["resources"]}
           </div>
-        </section>
+        </section> */}
       </>
     );
   } else {

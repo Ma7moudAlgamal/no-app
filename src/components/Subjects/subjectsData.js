@@ -33,29 +33,7 @@ const SubjectsData = [
         link={"https://www.youtube.com/embed/42iQKuQodW4"}
       />,
     ],
-    resources: [
-      <Resource
-        title={"Formulas"}
-        image={"../../../public/Resources/Physics/formulas/image.png"}
-        location={
-          "../../"
-        }
-      />,
-      <Resource
-        title={"Acceleration"}
-        image={"../../../public/Resources/Physics/formulas/image.png"}
-        location={
-          "../public/Resources/Physics/formulas/Section_2.1_-Why_be_an_Entrepreneur-LESSON_questions_(answers).pdf"
-        }
-      />,
-      <Resource
-        title={"Graphs"}
-        image={"../../../public/Resources/Physics/formulas/image.png"}
-        location={
-          "../public/Resources/Physics/formulas/Section_2.1_-Why_be_an_Entrepreneur-LESSON_questions_(answers).pdf"
-        }
-      />,
-    ],
+    
     tutors: [
       {
         name: "Mark Vector",
@@ -89,7 +67,7 @@ const SubjectsData = [
     description: "first line \n second line",
     image: "ImageLink",
     "sample-lessons": [],
-    resources: [],
+    
     tutors: [
       {
         name: "Mr. Mostafa Tarek",
@@ -105,7 +83,7 @@ const SubjectsData = [
     description: "first line \n second line",
     image: "ImageLink",
     "sample-lessons": [],
-    resources: [],
+    
     tutors: [
       {
         name: "Mr. Mostafa Tarek",
@@ -121,7 +99,7 @@ const SubjectsData = [
     description: "first line \n second line",
     image: "ImageLink",
     "sample-lessons": [],
-    resources: [],
+    
     tutors: [
       {
         name: "Mr. Mostafa Tarek",
@@ -137,7 +115,7 @@ const SubjectsData = [
     description: "",
     image: "ImageLink",
     "sample-lessons": [],
-    resources: [],
+    
     tutors: [
       {
         name: "Mr. Mostafa Tarek",
