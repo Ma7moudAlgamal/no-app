@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <>
       <div className="content">
-        <form onsubmit="sendEmail(); reset(); return false" netlify>
+        <form onsubmit="reset(); return false" netlify>
           <input type="text" id="name" placeholder="Your Name" required />
           <input type="email" id="email" placeholder="Your Email" required />
           <input
