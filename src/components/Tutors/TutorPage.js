@@ -26,7 +26,9 @@ const TutorPage = () => {
           <img src={tutorData.image} alt={tutorData.name} />
           <h1 className="section-title">{tutorData.name}</h1>
           <p className="tutor-description">{tutorData.description}</p>
-          <p className="tutor-subjects">{subjects}</p>
+          <p className="tutor-subjects">
+            <div>{subjects}</div> {tutorData.rating}
+          </p>
         </main>
 
         <section className="tutor-contact wrapper">
@@ -46,7 +48,11 @@ const TutorPage = () => {
             </a>
           </div>
           <div className="contact-info hover card">
-            <a href={`mailto:${tutorData.contact.email}`} target="_blank" rel='noreferrer'>
+            <a
+              href={`mailto:${tutorData.contact.email}`}
+              target="_blank"
+              rel="noreferrer"
+            >
               <FontAwesomeIcon icon={faEnvelope} />
               <p>{tutorData.contact.email}</p>
             </a>

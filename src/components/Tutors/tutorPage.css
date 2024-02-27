@@ -30,7 +30,13 @@
     grid-column: 2;
     align-self: flex-end;
     display: flex;
+    justify-content: space-between;
     gap: 2.5rem;
+
+    div {
+      display: flex;
+      gap: 2.5rem;
+    }
   }
 
   .tutor-contact {
@@ -54,6 +60,16 @@
       p {
         font-size: 1.5rem;
       }
+    }
+  }
+
+  .MuiRating-iconFilled {
+    color: var(--secondary-clr);
+  }
+
+  .MuiRating-root {
+    svg {
+      font-size: 2.5rem;
     }
   }
 }

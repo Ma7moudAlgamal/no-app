@@ -1,12 +1,13 @@
 import SubjectsList from "../Subjects/SubjectsList";
 import TutorsList from "../Tutors/TutorsList";
+import Contact from "../contact/contact";
 import Reason from "./Reason Card/Reason";
 import "./css/about.css";
 import "./css/hero.css";
 import "./css/reasons.css";
 import "./css/subjectsList.css";
 import "./css/tutorsList.css";
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
               className="hero-img"
             />
 
-            <div className="cta">
+            <div className="cta hover">
               <Link to="/subject">Explore Subjects</Link>
             </div>
           </div>
@@ -104,6 +105,12 @@ const Home = () => {
         <h2 className="section-title">Tutors</h2>
 
         <TutorsList />
+      </section>
+
+      <section id="contact" className="contact wrapper">
+        <h2 className="section-title">Contact Us</h2>
+
+        <Contact />
       </section>
     </>
   );

@@ -57,7 +57,8 @@ body::-webkit-scrollbar {
   color: var(--secondary-clr);
 }
 
-a {
+a,
+Link {
   color: var(--accent-clr); /* Adjust text color as needed */
   text-decoration: none;
   font-weight: 600;

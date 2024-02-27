@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./SubjectCard.css";
 
-const SubjectCard = ({ name, icon}) => {
+const SubjectCard = ({ name, icon }) => {
   return (
     <Link to={`/subject/${name}`}>
       <div className="card subject hover">

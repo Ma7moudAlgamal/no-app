@@ -1,3 +1,6 @@
+import { StarBorderRounded, StarRounded } from "@mui/icons-material";
+import { Rating } from "@mui/material";
+
 const tutorsData = [
   {
     id: 1,
@@ -5,12 +8,20 @@ const tutorsData = [
     abbrv: "Mark V.",
     image: "https://robohash.org/mark?set=set5",
     description:
-      "he is just a christian teacher who will make you curse all teachings",
+      "3ayel wese5 2bn a27ba, m3fn w kalb w we7esh 2wy. m7d4 beytee2oh. sada2ooni",
     subjects: ["Physics", "Chemistry"],
     contact: {
       phone: "9665123456",
       email: "markviktor@gmail.com",
     },
+    rating: (
+      <Rating
+        defaultValue={3}
+        icon={<StarRounded />}
+        emptyIcon={<StarBorderRounded />}
+        readOnly
+      />
+    ),
   },
   {
     id: 2,
@@ -24,6 +35,15 @@ const tutorsData = [
       phone: "966233565",
       email: "waeltohami@gmail.com",
     },
+    rating: (
+      <Rating
+        defaultValue={3}
+        icon={<StarRounded />}
+        emptyIcon={<StarBorderRounded />}
+        readOnly
+        
+      />
+    ),
   },
   {
     id: 3,
@@ -37,6 +57,14 @@ const tutorsData = [
       phone: "966233565",
       email: "waeltohami@gmail.com",
     },
+    rating: (
+      <Rating
+        defaultValue={3}
+        icon={<StarRounded />}
+        emptyIcon={<StarBorderRounded />}
+        readOnly
+      />
+    ),
   },
   {
     id: 4,
@@ -50,6 +78,14 @@ const tutorsData = [
       phone: "966233565",
       email: "waeltohami@gmail.com",
     },
+    rating: (
+      <Rating
+        defaultValue={3}
+        icon={<StarRounded />}
+        emptyIcon={<StarBorderRounded />}
+        readOnly
+      />
+    ),
   },
   {
     id: 5,
@@ -63,6 +99,14 @@ const tutorsData = [
       phone: "966233565",
       email: "waeltohami@gmail.com",
     },
+    rating: (
+      <Rating
+        defaultValue={3}
+        icon={<StarRounded />}
+        emptyIcon={<StarBorderRounded />}
+        readOnly
+      />
+    ),
   },
   {
     id: 6,
@@ -76,6 +120,14 @@ const tutorsData = [
       phone: "966233565",
       email: "waeltohami@gmail.com",
     },
+    rating: (
+      <Rating
+        defaultValue={3}
+        icon={<StarRounded />}
+        emptyIcon={<StarBorderRounded />}
+        readOnly
+      />
+    ),
   },
 ];
 
